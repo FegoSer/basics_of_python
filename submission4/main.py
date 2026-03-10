@@ -12,3 +12,14 @@
 # 8) Найбільше з трьох: (3, 17, 5), (10, 2, 8), (42, 15, 38)
 # 9) Дюйми → сантиметри: 1, 10, 5
 # 10) Кількість голосних: "hello world", "education", "beautiful day"
+
+# Фуекція для обчислення факторіалу числа
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        # Рекурсивний виклик функції для обчислення факторіалу
+        return n * factorial(n - 1)
+    
+print(factorial(5))
+print(factorial(8))
